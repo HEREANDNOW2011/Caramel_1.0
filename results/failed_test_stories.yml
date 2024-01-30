@@ -1,0 +1,43 @@
+version: "3.1"
+stories:
+- story: happy path 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great  # predicted: greet: amazing
+  - action: utter_happy  # predicted: utter_queries
+- story: happy path 2 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great  # predicted: greet: amazing
+  - action: utter_happy  # predicted: utter_queries
+  - intent: goodbye
+  - action: utter_goodbye
+- story: sad path 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: deny: not good
+  - action: utter_cheer_up  # predicted: utter_queries
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: affirm
+  - action: utter_happy  # predicted: utter_queries
+- story: sad path 2 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: deny: not good
+  - action: utter_cheer_up  # predicted: utter_queries
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny
+  - action: utter_goodbye
+- story: sad path 3 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: goodbye: very terrible
+  - action: utter_cheer_up  # predicted: utter_queries
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny
+  - action: utter_goodbye

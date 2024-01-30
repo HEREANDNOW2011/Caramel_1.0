@@ -1,0 +1,150 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - I need to go now
+    - I'll speak with my parents and let you know
+    - I will text you later
+    - I need some time to think
+    - I'll be in touch soon. Goodbye for now!
+    - Thanks for the information. I'll reach out later. Bye!
+    - I have to step away for now. Talk to you later!
+    - Appreciate your time. I'll consider everything. Goodbye!
+    - I'll discuss this with my team and get back to you. Bye!
+    - I need to review my options. I'll let you know. Goodbye!
+    - Let's reconvene after I've had time to think this over. Bye for now!
+    - Thanks for your assistance. I'll follow up when I have a decision. Goodbye!
+    - I'll take some time to mull things over. Talk to you later!
+    - I'll reflect on our conversation and get back to you. Goodbye!
+
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+-  intent: queries
+   examples: | 
+    - I have some questions
+    - I need to know more about your institute
+    - Tell me more about your institute
+    
+- intent: programmes
+  examples:  |
+    - what are the programmes you offer
+    - what are the programmes available at your institute
+    - "I'm interested in learning French. What programs do you offer?"
+    - "I'm a beginner/intermediate/advanced learner. Do you have any suitable programs for me?"
+    - "What are the different types of programs you have?" (e.g., regular courses, intensive programs, weekend courses, online courses)
+    - "Can I see a list of all your programs and their descriptions?"
+    - "Do you offer any programs focusing on specific aspects of French, like conversation, grammar, or vocabulary?"
+
+- intent: services
+  examples: |
+    - what are the services you offer
+    - what kind of service can I expect from you
+    - Can you tell me about the range of services your company provides?
+    - I'm interested in learning more about the specific services you offer.
+    - What types of services does your organization specialize in?
+    - Could you provide an overview of the services available to customers?
+    - How do your services differ from those of your competitors?
+    - I'm curious about the service packages you have available.
+    - Can you elaborate on the service options tailored to individual needs?
+    - What kind of support services do you offer after purchase?
+    - Could you outline the various service plans or tiers available?
+
+- intent: history
+  examples: |
+    - Can you tell me when the institute got started.
+    - how long has the institute been there.
+    - When was HERE AND NOW The French Institute founded?
+    - Who founded HERE AND NOW The French Institute?
+
+- intent: IPS
+  examples: |
+    - what is immersion program
+    - tell me more about immersion program
+    - Is immersion program available on weekends
+    - what do I learn in immersion program
+    - Can you tell me more about the immersion program?
+    - I'd like to learn more about the immersion program.
+    - Could you provide information about the immersion program?
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - May I know who are you?
+
+- intent: French
+  examples: |
+   - I want to learn french
+   - I am looking for a institute to learn french
+   - I am interested in learning a new language
+   - do you offer French courses
+   - what is the level of french which I can learn from your institute
+   -  What are the options for learning French at your institute?
+   - Is there a French language course available?
+   - Can you tell me about the French language training you provide?
+   - I'm keen on enrolling in a French course.
+   - Could you give me details about your French language classes?
+   - Are there any beginner-level French courses available?
+   - I'm looking for opportunities to study French.
+   - What levels of French proficiency do you offer?
+   - Can I learn French from scratch at your institute?
+   - Do you have any recommendations for learning French effectively?
+   - What kind of French courses do you offer?
+   - Are there any advanced French language courses available?
+   - How do I get started with learning French at your institute?
+   - What resources are available for learning French?
+   - Can you suggest a suitable French language program for me?
+   - I'm considering learning French. Where should I start?
+   - Are there any French language workshops or seminars?
+   - What are the prerequisites for joining a French language course?
+   - Do you provide any online French language courses?
+   - Can you recommend any French language textbooks or materials?
+   - Is there a placement test for French language courses?
+   -  I'm looking for conversational French classes. Do you offer them?

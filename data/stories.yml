@@ -1,0 +1,50 @@
+version: "3.1"
+
+stories:
+
+- story: enquire path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: queries
+  - action: utter_queries
+  - intent: IPS
+  - action: utter_IPS
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: history
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: history
+  - action: utter_history
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: services and programmes
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: programmes
+  - action: utter_programmes
+  - intent: services
+  - action: utter_services
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Program
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: French
+  - action: utter_French
+  
+- story: IPS
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: IPS
+  - action: utter_IPS
+ 
+ 

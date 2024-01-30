@@ -1,0 +1,92 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - queries
+  - history
+  - programmes
+  - modes
+  - bot_challenge
+  - IPS
+  - services
+  - French
+  - Vision
+responses:
+  utter_greet:
+  - text: "Bonjour,
+           I am Caramel, The Customer Representative Bot. I am here to guide you, So tell me how can I help you?"
+
+  utter_queries:
+  - text: "Yes please tell me"
+
+  utter_IPS:
+  - text: "IMMERSION PROGRAM is the fastest mode through which one can master French in just 108 days and obtain the Diploma in Business French (B2) Certificate. IMMERSION PROGRAM is a 108-Day Regime (1000 learning hours), which happens on the weekdays and lasts for 6 months. Diploma in Business French is the World’s Fastest Linguistic Skill Acquisition Program. The skill is acquired by learning the French language from HERE AND NOW The French Institute. IMMERSION PROGRAM is a full-time course that happens on weekdays from 8 AM to 5:30 PM. For weekends, you can enroll in PROGRAMME SPRINT"
+
+
+  utter_did_that_help:
+  - text: "Do you need anything else?"
+
+  utter_happy:
+  - text: "I am really happy to know that you found my answer helpful. Just ask me if you want anything else."
+  
+  utter_history:
+  - text: "HERE AND NOW was started by Ruthran Raghavan, graduate of Psychology and beloved French  professor of thousands of students, in 2011 with a borrowed investment of just Rs.10,000. With  increasing student intakes, that resulted over a decade’s success.
+
+          In 2016 Deepti Balagopal an outstanding student joined the team as Professor and went on to  become the Director. The “IMMERSION PROGRAM” introduced in 2017 was a runaway success  and set stage for the transformation and set a new benchmark showing the world how to learn a language.
+          The Covid-19 Pandemic challenged us with classroom teaching coming to a halt. However, we  were quick to respond and introduced “TEF Compass” a 100% online learning program. The  success of this program motivates us to diversify into the e-learning approach.
+
+          The “Programme Lumière” is currently being tested and will be the World's fastest Linguistic Skill Acquisition Program - Language Mastery in 3 months beating the current World’s fastest course - The IMMERSION PROGRAM designed by HERE AND NOW.
+
+          Another interesting fact to be known: we are the pioneers in Comprehensive and Organised Business Language Programs."
+
+  utter_goodbye:
+  - text: "Thank you for reaching out to us. Have a nice day" 
+
+  utter_iamabot:
+  - text: "I am Caramel, the customer representative bot of HERE AND NOW The French Institute. Founded on 2018 by Monsieur Ruthran Raghavan (CEO & Founder)"
+  
+  utter_programmes:
+  - text: "The Programmes which we offer are:
+           IPS(Immersion Program Sqaud), Diploma in Business French, TEF(Test d'Évaluation de Français), PROGRAMME SPRINT"
+
+  utter_services:
+  - text: "We offer services like teaching, consultancy, job placement, immigration, etc"
+  
+  utter_French:
+  - text: "I'm thrilled to konw that you're interested in our language programs.
+
+           Whether you're a complete beginner or a seasoned speaker looking to refine your French, we have something for everyone. Let me guide you through our offerings:
+
+           French Language Courses:
+
+           Beginner, Intermediate, Advanced: Our regular group classes cater to all levels(A1 - C2), focusing on conversational fluency, grammar mastery, and cultural immersion.
+           The Immersion Experience: Our intensive 108-day program is a game-changer. It utilizes innovative techniques to propel you to conversational fluency in French, fast.
+           Tailor-Made Programs: Need something specific? We design personalized courses based on your goals, schedule, and interests. Business French, anyone?
+
+           Beyond French:
+
+           Multilingualism Unlocked: We offer Immersion Programs in German, Spanish, and even English, using the same effective methodology.
+           More Than Just Languages: We provide a range of services like technology support, research assistance, training workshops, and even translation and interpretation. Consider us your one-stop shop for cultural and linguistic exploration.
+
+           Ready to Dive In?
+
+           We're passionate about helping you achieve your language goals. Here's how to get started:
+
+           Visit our website: hereandnow.co.in,
+           for in-depth information and course schedules:
+           Explore our business site: https://hereandnowthefrenchinstitute.business.site/: https://hereandnowthefrenchinstitute.business.site/: for easy access to contact details and testimonials.
+           Connect with us on LinkedIn: https://in.linkedin.com/school/hereandnow/: https://in.linkedin.com/school/hereandnow/: to stay updated on events, promotions, and more.
+
+           Don't hesitate to reach out. We're here to answer your questions and help you choose the perfect program to unlock your language potential. Remember, at HERE AND NOW, we believe language learning is a journey, not just a destination. Let's embark on it together!
+
+           Au revoir, et à bientôt!"
+
+action:
+  - action_store_user_response_to_mongo
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
